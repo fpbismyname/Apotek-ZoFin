@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ZoFin.RegisterPage"
+             NavigationPage.HasNavigationBar="False">
+    <ContentPage.Content>
+        <StackLayout HorizontalOptions="CenterAndExpand" VerticalOptions="Center">
+            <Label Text="Apotek ZoFin"
+               HorizontalTextAlignment="Center"
+               Margin="0,0,0,20"
+               FontSize="24"
+               FontAttributes="Bold"
+               TextColor="Black"/>
+            <Label Text="Silahkan isi data pribadi anda !"
+               HorizontalTextAlignment="Center"
+               FontSize="14"
+               FontAttributes="Bold"
+               WidthRequest="300"
+               HorizontalOptions="Center"
+               TextColor="Black"/>
+            <Entry Placeholder="Username"
+               x:Name="username_regis"
+               PlaceholderColor="gray"
+               TextColor="Black"/>
+            <Entry Placeholder="Password"
+               PlaceholderColor="gray"
+               x:Name="password_regis"
+               TextColor="Black"/>
+            <Entry Placeholder="Confirm Password"
+               PlaceholderColor="gray"
+               x:Name="password_regis_confirm"
+               TextColor="Black"/>
+            <Button Text="Register"
+                Background="#c368fc"
+                CornerRadius="50"
+                Clicked="Button_Clicked_Register"
+                HorizontalOptions="Center"
+                Margin="2,20,0,0"/> 
+            <Button Text="Back"
+                Background="#c368fc"
+                CornerRadius="50"
+                Clicked="Button_Clicked_Back_Register"
+                HorizontalOptions="Center"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

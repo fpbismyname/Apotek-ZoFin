@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ZoFin.MainPage"
+             NavigationPage.HasNavigationBar="False">
+
+    <StackLayout HorizontalOptions="CenterAndExpand" VerticalOptions="Center">
+        <Label Text="Apotek ZoFin"
+               HorizontalTextAlignment="Center"
+               Margin="20"
+               FontSize="24"
+               FontAttributes="Bold"
+               TextColor="Black"/>
+        <Label Text="Masukan username dan password anda !"
+               HorizontalTextAlignment="Center"
+               FontSize="14"
+               FontAttributes="Bold"
+               TextColor="Black"/>
+        <Entry Placeholder="Username"
+               x:Name="username_login"
+               WidthRequest="300"
+               HorizontalOptions="Center"
+               PlaceholderColor="gray"
+               TextColor="Black"/>
+        <Entry Placeholder="Password"
+               PlaceholderColor="gray"
+               WidthRequest="300"
+               HorizontalOptions="Center"
+               x:Name="password_login"
+               TextColor="Black"/>
+        <Button Text="Login"
+                Background="#c368fc"
+                Clicked="Button_Clicked"
+                CornerRadius="50"
+                HorizontalOptions="Center"
+                Margin="20"/>
+        <Label HorizontalTextAlignment="Center">
+            <Label.FormattedText>
+                <FormattedString>
+                    <FormattedString.Spans>
+                        <Span Text="Belum punya akun ? "
+                              TextColor="Black"/>
+                        <Span Text="Daftar disini" FontAttributes="Bold"
+                              TextColor="#c368fc"/>
+                    </FormattedString.Spans>
+                </FormattedString>
+            </Label.FormattedText>
+            <Label.GestureRecognizers>
+                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped">
+                </TapGestureRecognizer>
+            </Label.GestureRecognizers>
+        </Label>
+    </StackLayout>
+
+</ContentPage>
